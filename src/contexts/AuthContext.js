@@ -14,12 +14,12 @@ export function AuthProvider({ children }) {
 
     function signup(email, password) {
         return auth.createUserWithEmailAndPassword(email, password)
-            .then(function(user) {
-                if (user && user.emailVerified === false) {
-                    user.sendEmailVerification().then(function() {
-                        console.log("email verification sent to user");
+            .then((userCredential) => {
+                var user = userCredential.user;
+                console.log(email)
+                user.sendEmailVerification().then(function() {
+                    console.log("email verification sent to user");
                     });
-                }
             }).catch(function(error) {
                 // Handle Errors here.
                 var errorCode = error.code;
