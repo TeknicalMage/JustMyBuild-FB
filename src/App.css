@@ -1,5 +1,6 @@
 .App {
   text-align: center;
+  color: '#03001C';
 }
 
 .App-logo {
@@ -36,3 +37,20 @@
     transform: rotate(360deg);
   }
 }
+
+@font-face {
+  font-family: 'UniSans';
+  src: local('UniSans'), url(./Assets/Fonts/uni-sans.thin-caps.otf) format('opentype');
+}
+
+@font-face {
+    font-family: 'UniSans';
+    font-weight: 900;
+    src: local('UniSans'), url(./Assets/Fonts/uni-sans.heavy-caps.otf) format('opentype');
+}
+
+
+.h1 {
+  font-size: 100px !important;
+}
+

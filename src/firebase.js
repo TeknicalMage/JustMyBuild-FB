@@ -4,7 +4,6 @@ import 'firebase/firestore';
 
 
 const app = firebase.initializeApp({
-
   apiKey: "AIzaSyCxctfhqqO_Oc1ICaX33CtC3oJ-YjEZYn0",
   authDomain: "juicecord-tmp.firebaseapp.com",
   databaseURL: "https://juicecord-tmp-default-rtdb.firebaseio.com",
